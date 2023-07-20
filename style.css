@@ -11,4 +11,7 @@ body {
   min-height: 100vh;
   font-family: Arsenal, Helvetica;
   letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
