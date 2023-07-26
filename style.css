@@ -28,10 +28,6 @@ body {
   box-shadow: 0px 5px 30px 10px rgba(0, 0, 0, 0.5);
 }
 
-#message {
-  margin-top: 3px;
-}
-
 /* Form */
 form {
   width: 90%;
@@ -59,7 +55,7 @@ input {
 /* The end of Form ------*/
 
 
-/* Pseudo Class */
+/* Pseudo Class: borders of input */
 input:valid {
   border: 3px solid gold;
 }
@@ -75,7 +71,7 @@ input:invalid {
 button {
   cursor: pointer;
   color: black;
-  background: pink;
+  background: whitesmoke;
   border: none;
   border-radius: 5px;
   height: 30px;
@@ -83,4 +79,17 @@ button {
   font-family: Arsenal, Helvetica;
   font-size: large;
   letter-spacing: 2px;
+}
+
+/* Pseudo Class: button */
+button:hover {
+  /* filter: brightness(120%); */
+  background: rgb(249, 189, 199);
+}
+button:focus {
+  outline: none;
+}
+
+#message{
+  margin-top: 3px;
 }
