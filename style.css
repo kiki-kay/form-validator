@@ -90,6 +90,13 @@ button:focus {
   outline: none;
 }
 
-#message{
+/* #message{
   margin-top: 3px;
+} */
+.container-message {
+  width: 90%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+
 }
