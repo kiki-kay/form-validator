@@ -71,3 +71,16 @@ input:invalid {
 #sign-up{
   margin-bottom: 10px;
 }
+
+button {
+  cursor: pointer;
+  color: black;
+  background: pink;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 100%;
+  font-family: Arsenal, Helvetica;
+  font-size: large;
+  letter-spacing: 2px;
+}
