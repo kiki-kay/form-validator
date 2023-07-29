@@ -5,5 +5,9 @@ const password2El = document.getElementById('passworld2');
 const containerMessage = document.querySelector('.container-mssage');
 const message = document.getElementById('message');
 
+function processForms(e){
+    console.log(e);
+}
+
 // Event Listener
-form.addEventListener('submit', functionToProcessForms);
+form.addEventListener('submit', processForms);
