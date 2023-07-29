@@ -6,7 +6,11 @@ const containerMessage = document.querySelector('.container-mssage');
 const message = document.getElementById('message');
 
 function processForms(e){
-    console.log(e);
+    e.preventDefault();// prevent from refreshing form data
+    //Testing: console.log(e);
+    // Validate form
+    validateForm();
+    // Store data
 }
 
 // Event Listener
