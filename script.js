@@ -5,7 +5,7 @@ const password2El = document.getElementById('passworld2');
 const containerMessage = document.querySelector('.container-mssage');
 const message = document.getElementById('message');
 
-let isValid = fales; //Default value for validateForm function
+let isValid = false; 
 
 function validateForm(){
     //Use Constraint API
