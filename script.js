@@ -10,7 +10,11 @@ let isValid = false;
 function validateForm(){
     //Use Constraint API
     isValid = form.checkValidity();
-    console.log(isValid);//For testing initial form validation
+    // console.log(isValid);//For testing initial form validation
+    // Style error message
+    message.textContent = 'Error! Please fill out all fields.';
+    message.style.color = 'red';
+    containerMessage.style.borderColor = 'red';
 }
 
 function processForms(e){
