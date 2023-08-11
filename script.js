@@ -5,16 +5,19 @@ const password2El = document.getElementById('passworld2');
 const containerMessage = document.querySelector('.container-mssage');
 const message = document.getElementById('message');
 
-let isValid = false; 
+let isValid = false;
+let checkPassword = false;
 
 function validateForm(){
     //Use Constraint API
     isValid = form.checkValidity();
     // console.log(isValid);//For testing initial form validation
-    // Style error message
+    // Style error  
+    if(!isValid){
     message.textContent = 'Error! Please fill out all fields.';
     message.style.color = 'red';
     containerMessage.style.borderColor = 'red';
+    }
 }
 
 function processForms(e){
