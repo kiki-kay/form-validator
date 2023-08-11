@@ -18,6 +18,19 @@ function validateForm(){
     message.style.color = 'red';
     containerMessage.style.borderColor = 'red';
     }
+    //Check to see if the password match.
+    if(password1El.value === password2El.value){
+        checkPassword = true;
+        password1El.style.borderColor = 'green';
+        password2El.style.borderColor = 'green';
+    } else {
+        checkPassword = false;
+        message.textContent = 'Please make sure passwords match.';
+        message.style.color = 'red';
+        containerMessage.style.color = 'red';
+        password1El.style.borderColor = 'red';
+        password2El.style.borderColor = 'red'; 
+    }
 }
 
 function processForms(e){
