@@ -55,7 +55,7 @@ input {
 /* The end of Form ------*/
 
 
-/* Pseudo Class: borders of input */
+/* Pseudo Class: borders of inputs */
 input:valid {
   border: 3px solid gold;
 }
@@ -93,10 +93,11 @@ button:focus {
 /* #message{
   margin-top: 3px;
 } */
+
 .container-message {
   width: 90%;
   margin-top: 10px;
   display: flex;
   justify-content: center;
-
+  border: black;
 }

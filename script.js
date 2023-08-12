@@ -2,7 +2,7 @@
 const form = document.getElementById('form');
 const password1El = document.getElementById('password1');
 const password2El = document.getElementById('password2');
-const containerMessage = document.querySelector('.container-mssage');
+const containerMessage = document.querySelector('.container-message');
 const message = document.getElementById('message');
 
 let isValid = false;
@@ -14,11 +14,12 @@ function validateForm(){
     // console.log(isValid);//For testing initial form validation
     // Style error  
     if(!isValid){
-    message.textContent = 'Error! Please fill out all fields.';
-    message.style.color = 'red';
-    containerMessage.style.borderColor = 'red';
+        message.textContent = 'Error! Please fill out all fields.';
+        message.style.color = 'red';
+        containerMessage.style.borderColor = 'red';
+        return;//Break out of the function and stop what it's been doing.
     }
-    //Check to see if the password match.
+    //Check to see if passwords match.
     if(password1El.value === password2El.value){
         checkPassword = true;
         password1El.style.borderColor = 'green';
@@ -29,9 +30,17 @@ function validateForm(){
         message.style.color = 'red';
         containerMessage.style.color = 'red';
         password1El.style.borderColor = 'red';
-        password2El.style.borderColor = 'red'; 
+        password2El.style.borderColor = 'red';
+        return;//Break out of the function and stop what it's been doing.
     }
-}
+
+    //If form is valid and passwords match
+    if(isValid && checkPassword) {
+        message.textContent = 'Successfuly registered!';
+        message.style.color = 'pink';
+        containerMessage.style.borderColor = 'pink';
+    }
+} //- The end of validateForm()
 
 function processForms(e){
     e.preventDefault();// prevent from refreshing form data
