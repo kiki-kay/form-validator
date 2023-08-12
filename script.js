@@ -1,7 +1,7 @@
 // The main variables
 const form = document.getElementById('form');
-const password1El = document.getElementById('passworld1');
-const password2El = document.getElementById('passworld2');
+const password1El = document.getElementById('password1');
+const password2El = document.getElementById('password2');
 const containerMessage = document.querySelector('.container-mssage');
 const message = document.getElementById('message');
 
@@ -21,8 +21,8 @@ function validateForm(){
     //Check to see if the password match.
     if(password1El.value === password2El.value){
         checkPassword = true;
-        password1El.style.borderColor = 'green';
-        password2El.style.borderColor = 'green';
+        password1El.style.borderColor = 'black';
+        password2El.style.borderColor = 'black';
     } else {
         checkPassword = false;
         message.textContent = 'Please make sure passwords match.';
