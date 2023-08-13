@@ -42,12 +42,23 @@ function validateForm(){
     }
 } //- The end of validateForm()
 
+function storeFormData(){
+    const user = {
+      name: form.name.value,
+      phone: form.phone.value,
+      email: form.email.value,
+      website: form.website.value,
+      password: form.password.value,  
+    };
+    //Do something with the user data.
+    console.log(user);
+}
+
 function processForms(e){
     e.preventDefault();// prevent from refreshing form data
     //For test: console.log(e);
     // Validate form
     validateForm();
-    // Store data
 }
 
 // Event Listener
