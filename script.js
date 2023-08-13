@@ -50,12 +50,12 @@ function storeFormData(){
       website: form.website.value,
       password: form.password.value,  
     };
-    //Do something with the user data.
+    //Do something with the user data.*Here connect with backend?
     console.log(user);
 }
 
 function processForms(e){
-    e.preventDefault();// prevent from refreshing form data
+    e.preventDefault();// Prevent from refreshing form data
     //For test: console.log(e);
     // Validate form
     validateForm();
@@ -65,5 +65,5 @@ function processForms(e){
     }
 }
 
-// Event Listener
+//Event Listener
 form.addEventListener('submit', processForms);
