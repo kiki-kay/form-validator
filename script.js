@@ -34,7 +34,7 @@ function validateForm(){
         return;//Break out of the function and stop what it's been doing.
     }
 
-    //If form is valid and passwords match
+    //Only for checking to see if form is valid and passwords match
     if(isValid && checkPassword) {
         message.textContent = 'Successfuly registered!';
         message.style.color = 'pink';
@@ -59,6 +59,10 @@ function processForms(e){
     //For test: console.log(e);
     // Validate form
     validateForm();
+    // Submit data if valid
+    if(isValid && checkPassword){
+        storeFormData();
+    }
 }
 
 // Event Listener
