@@ -26,9 +26,10 @@ function validateForm(){
         password2El.style.borderColor = 'green';
     } else {
         checkPassword = false;
-        message.textContent = 'Please make sure passwords match.';
+        message.textContent = 'Please make sure passwords match!';
         message.style.color = 'red';
         containerMessage.style.color = 'red';
+        containerMessage.style.borderColor = 'red';
         password1El.style.borderColor = 'red';
         password2El.style.borderColor = 'red';
         return;//Break out of the function and stop what it's been doing.
@@ -57,7 +58,7 @@ function storeFormData(){
 function processForms(e){
     e.preventDefault();// Prevent from refreshing form data
     //For test: console.log(e);
-    // Validate form
+    // Validate forms
     validateForm();
     // Submit data if valid
     if(isValid && checkPassword){

@@ -99,5 +99,5 @@ button:focus {
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  border: black;
+  border: 1px solid black;
 }
